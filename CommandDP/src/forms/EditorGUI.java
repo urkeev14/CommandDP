@@ -205,7 +205,7 @@ public class EditorGUI extends javax.swing.JFrame {
     }
 
     public boolean isClipboardInitialized() {
-        return clipboard == null;
+        return clipboard != null;
     }
 
     public boolean isClipboardEmpty() {

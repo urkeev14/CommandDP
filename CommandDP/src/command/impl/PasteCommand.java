@@ -16,7 +16,7 @@ public class PasteCommand extends Command {
 
     @Override
     public boolean execute() {
-        if (editor.isClipboardInitialized() || editor.isClipboardEmpty()) {
+        if (!editor.isClipboardInitialized() || editor.isClipboardEmpty()) {
             return false;
         }
         
